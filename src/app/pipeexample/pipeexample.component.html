@@ -1,0 +1,14 @@
+<p>pipeexample works!</p>
+
+<table border="3">
+    <tr>
+        <th>Name</th>
+        <th>No</th>
+        <th>Gender</th>
+    </tr>
+    <tr *ngFor="let em of employee">
+        <td> {{em.name | mypipe:em.gender |codepipe:em.code}} </td>
+        <td> {{em.no}} </td>
+        <td> {{em.gender}} </td>
+    </tr>
+</table>

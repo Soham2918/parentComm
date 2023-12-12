@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sahoProj';
+
+
+  Cdata:any
+
+  getData(value:any){
+    this.Cdata=value;
+  }
+
 }
